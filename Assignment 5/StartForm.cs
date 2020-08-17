@@ -26,5 +26,11 @@ namespace Assignment_5
         {
             Application.Exit();
         }
+
+        private void NewOrderButton_Click(object sender, EventArgs e)
+        {
+            Program.selectForm.Show();
+            this.Hide();
+        }
     }
 }

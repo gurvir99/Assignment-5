@@ -8,6 +8,8 @@ namespace Assignment_5
 {
     static class Program
     {
+        public static StartForm  startForm;
+        public static SelectForm selectForm;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -16,7 +18,12 @@ namespace Assignment_5
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new StartForm());
+
+            startForm = new StartForm();
+            selectForm = new SelectForm();
+
+
+            Application.Run(startForm);
         }
     }
 }
