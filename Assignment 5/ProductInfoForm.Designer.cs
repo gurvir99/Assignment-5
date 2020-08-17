@@ -142,7 +142,7 @@
             // 
             // ProductInfoGroupBox
             // 
-            this.ProductInfoGroupBox.BackColor = System.Drawing.SystemColors.Control;
+            this.ProductInfoGroupBox.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ProductInfoGroupBox.Controls.Add(this.ManufacturerLabel);
             this.ProductInfoGroupBox.Controls.Add(this.OSLabel);
             this.ProductInfoGroupBox.Controls.Add(this.PlatformLabel);
@@ -508,6 +508,7 @@
             this.CancelButton.TabIndex = 2;
             this.CancelButton.Text = "Cancel";
             this.CancelButton.UseVisualStyleBackColor = true;
+            this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
             // 
             // NextButton
             // 
@@ -519,6 +520,7 @@
             this.NextButton.TabIndex = 1;
             this.NextButton.Text = "Next";
             this.NextButton.UseVisualStyleBackColor = true;
+            this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
             // 
             // AnotherButton
             // 
@@ -535,6 +537,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(1062, 603);
             this.Controls.Add(this.NextButton);
             this.Controls.Add(this.AnotherButton);
@@ -554,6 +557,7 @@
             this.Name = "ProductInfoForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Product Info Form";
+            this.Load += new System.EventHandler(this.ProductInfoForm_Load);
             this.ProductInfoGroupBox.ResumeLayout(false);
             this.ProductInfoGroupBox.PerformLayout();
             this.groupBox1.ResumeLayout(false);

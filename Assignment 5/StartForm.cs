@@ -32,5 +32,11 @@ namespace Assignment_5
             Program.selectForm.Show();
             this.Hide();
         }
+
+        private void LoadButton_Click(object sender, EventArgs e)
+        {
+            Program.productInfoForm.Show();
+            this.Hide();
+        }
     }
 }

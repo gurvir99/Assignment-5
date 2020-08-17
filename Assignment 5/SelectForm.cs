@@ -28,5 +28,11 @@ namespace Assignment_5
             this.productsTableAdapter.Fill(this.dollarComputersDataSet.products);
 
         }
+
+        private void NextButton_Click(object sender, EventArgs e)
+        {
+            Program.productInfoForm.Show();
+            this.Hide();
+        }
     }
 }
