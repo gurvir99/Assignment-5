@@ -16,5 +16,15 @@ namespace Assignment_5
         {
             InitializeComponent();
         }
+
+        private void ProductInfoGroupBox_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void IdTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
