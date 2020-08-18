@@ -35,14 +35,14 @@
             this.CostTextBox = new System.Windows.Forms.TextBox();
             this.CostLabel = new System.Windows.Forms.Label();
             this.ProductInfoGroupBox = new System.Windows.Forms.GroupBox();
-            this.PlatformLabel = new System.Windows.Forms.Label();
             this.ManufacturerLabel = new System.Windows.Forms.Label();
-            this.PlatformTextBox = new System.Windows.Forms.TextBox();
-            this.ManufacturerTextBox = new System.Windows.Forms.TextBox();
-            this.ModelTextBox = new System.Windows.Forms.TextBox();
             this.OSLabel = new System.Windows.Forms.Label();
-            this.ModelLabel = new System.Windows.Forms.Label();
+            this.PlatformLabel = new System.Windows.Forms.Label();
             this.OSTextBox = new System.Windows.Forms.TextBox();
+            this.ModelTextBox = new System.Windows.Forms.TextBox();
+            this.ManufacturerTextBox = new System.Windows.Forms.TextBox();
+            this.ModelLabel = new System.Windows.Forms.Label();
+            this.PlatformTextBox = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -160,17 +160,6 @@
             this.ProductInfoGroupBox.Text = "Product Info";
             this.ProductInfoGroupBox.Enter += new System.EventHandler(this.ProductInfoGroupBox_Enter);
             // 
-            // PlatformLabel
-            // 
-            this.PlatformLabel.AutoSize = true;
-            this.PlatformLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PlatformLabel.ForeColor = System.Drawing.Color.Black;
-            this.PlatformLabel.Location = new System.Drawing.Point(49, 41);
-            this.PlatformLabel.Name = "PlatformLabel";
-            this.PlatformLabel.Size = new System.Drawing.Size(77, 24);
-            this.PlatformLabel.TabIndex = 0;
-            this.PlatformLabel.Text = "Platform";
-            // 
             // ManufacturerLabel
             // 
             this.ManufacturerLabel.AutoSize = true;
@@ -182,29 +171,39 @@
             this.ManufacturerLabel.TabIndex = 0;
             this.ManufacturerLabel.Text = "Manufacturer";
             // 
-            // PlatformTextBox
+            // OSLabel
             // 
-            this.PlatformTextBox.BackColor = System.Drawing.Color.White;
-            this.PlatformTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PlatformTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PlatformTextBox.Location = new System.Drawing.Point(132, 41);
-            this.PlatformTextBox.Name = "PlatformTextBox";
-            this.PlatformTextBox.ReadOnly = true;
-            this.PlatformTextBox.Size = new System.Drawing.Size(175, 28);
-            this.PlatformTextBox.TabIndex = 1;
-            this.PlatformTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.OSLabel.AutoSize = true;
+            this.OSLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OSLabel.ForeColor = System.Drawing.Color.Black;
+            this.OSLabel.Location = new System.Drawing.Point(433, 43);
+            this.OSLabel.Name = "OSLabel";
+            this.OSLabel.Size = new System.Drawing.Size(37, 24);
+            this.OSLabel.TabIndex = 0;
+            this.OSLabel.Text = "OS";
             // 
-            // ManufacturerTextBox
+            // PlatformLabel
             // 
-            this.ManufacturerTextBox.BackColor = System.Drawing.Color.White;
-            this.ManufacturerTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ManufacturerTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ManufacturerTextBox.Location = new System.Drawing.Point(132, 105);
-            this.ManufacturerTextBox.Name = "ManufacturerTextBox";
-            this.ManufacturerTextBox.ReadOnly = true;
-            this.ManufacturerTextBox.Size = new System.Drawing.Size(175, 28);
-            this.ManufacturerTextBox.TabIndex = 1;
-            this.ManufacturerTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.PlatformLabel.AutoSize = true;
+            this.PlatformLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PlatformLabel.ForeColor = System.Drawing.Color.Black;
+            this.PlatformLabel.Location = new System.Drawing.Point(49, 41);
+            this.PlatformLabel.Name = "PlatformLabel";
+            this.PlatformLabel.Size = new System.Drawing.Size(77, 24);
+            this.PlatformLabel.TabIndex = 0;
+            this.PlatformLabel.Text = "Platform";
+            // 
+            // OSTextBox
+            // 
+            this.OSTextBox.BackColor = System.Drawing.Color.White;
+            this.OSTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.OSTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OSTextBox.Location = new System.Drawing.Point(476, 37);
+            this.OSTextBox.Name = "OSTextBox";
+            this.OSTextBox.ReadOnly = true;
+            this.OSTextBox.Size = new System.Drawing.Size(555, 28);
+            this.OSTextBox.TabIndex = 1;
+            this.OSTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // ModelTextBox
             // 
@@ -218,16 +217,17 @@
             this.ModelTextBox.TabIndex = 1;
             this.ModelTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // OSLabel
+            // ManufacturerTextBox
             // 
-            this.OSLabel.AutoSize = true;
-            this.OSLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OSLabel.ForeColor = System.Drawing.Color.Black;
-            this.OSLabel.Location = new System.Drawing.Point(433, 43);
-            this.OSLabel.Name = "OSLabel";
-            this.OSLabel.Size = new System.Drawing.Size(37, 24);
-            this.OSLabel.TabIndex = 0;
-            this.OSLabel.Text = "OS";
+            this.ManufacturerTextBox.BackColor = System.Drawing.Color.White;
+            this.ManufacturerTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ManufacturerTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ManufacturerTextBox.Location = new System.Drawing.Point(132, 105);
+            this.ManufacturerTextBox.Name = "ManufacturerTextBox";
+            this.ManufacturerTextBox.ReadOnly = true;
+            this.ManufacturerTextBox.Size = new System.Drawing.Size(175, 28);
+            this.ManufacturerTextBox.TabIndex = 1;
+            this.ManufacturerTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // ModelLabel
             // 
@@ -240,17 +240,17 @@
             this.ModelLabel.TabIndex = 0;
             this.ModelLabel.Text = "Model";
             // 
-            // OSTextBox
+            // PlatformTextBox
             // 
-            this.OSTextBox.BackColor = System.Drawing.Color.White;
-            this.OSTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.OSTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OSTextBox.Location = new System.Drawing.Point(476, 37);
-            this.OSTextBox.Name = "OSTextBox";
-            this.OSTextBox.ReadOnly = true;
-            this.OSTextBox.Size = new System.Drawing.Size(555, 28);
-            this.OSTextBox.TabIndex = 1;
-            this.OSTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.PlatformTextBox.BackColor = System.Drawing.Color.White;
+            this.PlatformTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PlatformTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PlatformTextBox.Location = new System.Drawing.Point(132, 41);
+            this.PlatformTextBox.Name = "PlatformTextBox";
+            this.PlatformTextBox.ReadOnly = true;
+            this.PlatformTextBox.Size = new System.Drawing.Size(175, 28);
+            this.PlatformTextBox.TabIndex = 1;
+            this.PlatformTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // groupBox1
             // 
@@ -526,12 +526,13 @@
             // 
             this.AnotherButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AnotherButton.ForeColor = System.Drawing.Color.Black;
-            this.AnotherButton.Location = new System.Drawing.Point(534, 525);
+            this.AnotherButton.Location = new System.Drawing.Point(507, 525);
             this.AnotherButton.Name = "AnotherButton";
-            this.AnotherButton.Size = new System.Drawing.Size(221, 46);
+            this.AnotherButton.Size = new System.Drawing.Size(248, 46);
             this.AnotherButton.TabIndex = 3;
             this.AnotherButton.Text = "Select Another Product";
             this.AnotherButton.UseVisualStyleBackColor = true;
+            this.AnotherButton.Click += new System.EventHandler(this.AnotherButton_Click);
             // 
             // ProductInfoForm
             // 
@@ -557,6 +558,7 @@
             this.Name = "ProductInfoForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Product Info Form";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ProductInfoForm_FormClosing);
             this.Load += new System.EventHandler(this.ProductInfoForm_Load);
             this.ProductInfoGroupBox.ResumeLayout(false);
             this.ProductInfoGroupBox.PerformLayout();

@@ -12,6 +12,7 @@ namespace Assignment_5
         public static SelectForm selectForm;
         public static ProductInfoForm productInfoForm;
         public static OrderForm orderForm;
+        public static SplashForm splashForm;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -25,9 +26,10 @@ namespace Assignment_5
             selectForm = new SelectForm();
             productInfoForm = new ProductInfoForm();
             orderForm = new OrderForm();
+            splashForm = new SplashForm();
 
 
-            Application.Run(startForm);
+            Application.Run(splashForm);
         }
     }
 }

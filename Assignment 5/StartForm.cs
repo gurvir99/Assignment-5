@@ -38,5 +38,10 @@ namespace Assignment_5
             Program.productInfoForm.Show();
             this.Hide();
         }
+
+        private void StartForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

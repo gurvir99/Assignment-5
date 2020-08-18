@@ -42,5 +42,16 @@ namespace Assignment_5
         {
 
         }
+
+        private void AnotherButton_Click(object sender, EventArgs e)
+        {
+            Program.selectForm.Show();
+            this.Hide();
+        }
+
+        private void ProductInfoForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

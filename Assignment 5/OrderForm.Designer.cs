@@ -50,15 +50,15 @@
             this.ConditionLabel = new System.Windows.Forms.Label();
             this.IdLabel = new System.Windows.Forms.Label();
             this.PriceGroupBox = new System.Windows.Forms.GroupBox();
+            this.TotalTextBox = new System.Windows.Forms.TextBox();
+            this.TaxTextBox = new System.Windows.Forms.TextBox();
+            this.PriceTextBox = new System.Windows.Forms.TextBox();
+            this.TotalLabel = new System.Windows.Forms.Label();
+            this.TaxLabel = new System.Windows.Forms.Label();
+            this.PriceLabel = new System.Windows.Forms.Label();
             this.Back = new System.Windows.Forms.Button();
             this.CancelButton = new System.Windows.Forms.Button();
             this.FinishButton = new System.Windows.Forms.Button();
-            this.PriceTextBox = new System.Windows.Forms.TextBox();
-            this.TaxTextBox = new System.Windows.Forms.TextBox();
-            this.TotalTextBox = new System.Windows.Forms.TextBox();
-            this.PriceLabel = new System.Windows.Forms.Label();
-            this.TaxLabel = new System.Windows.Forms.Label();
-            this.TotalLabel = new System.Windows.Forms.Label();
             this.SystemGroupBox.SuspendLayout();
             this.PriceGroupBox.SuspendLayout();
             this.SuspendLayout();
@@ -97,11 +97,11 @@
             // 
             this.ComponentsTextBox.BackColor = System.Drawing.Color.White;
             this.ComponentsTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ComponentsTextBox.Location = new System.Drawing.Point(117, 175);
+            this.ComponentsTextBox.Location = new System.Drawing.Point(136, 168);
             this.ComponentsTextBox.Multiline = true;
             this.ComponentsTextBox.Name = "ComponentsTextBox";
             this.ComponentsTextBox.ReadOnly = true;
-            this.ComponentsTextBox.Size = new System.Drawing.Size(438, 365);
+            this.ComponentsTextBox.Size = new System.Drawing.Size(419, 372);
             this.ComponentsTextBox.TabIndex = 25;
             // 
             // OSLabel
@@ -253,7 +253,7 @@
             this.ManufacturerTextBox.BackColor = System.Drawing.Color.White;
             this.ManufacturerTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ManufacturerTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ManufacturerTextBox.Location = new System.Drawing.Point(117, 95);
+            this.ManufacturerTextBox.Location = new System.Drawing.Point(136, 95);
             this.ManufacturerTextBox.Name = "ManufacturerTextBox";
             this.ManufacturerTextBox.ReadOnly = true;
             this.ManufacturerTextBox.Size = new System.Drawing.Size(175, 28);
@@ -288,7 +288,7 @@
             this.ConditionTextBox.BackColor = System.Drawing.Color.White;
             this.ConditionTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ConditionTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ConditionTextBox.Location = new System.Drawing.Point(117, 41);
+            this.ConditionTextBox.Location = new System.Drawing.Point(136, 41);
             this.ConditionTextBox.Name = "ConditionTextBox";
             this.ConditionTextBox.ReadOnly = true;
             this.ConditionTextBox.Size = new System.Drawing.Size(175, 28);
@@ -332,47 +332,16 @@
             this.PriceGroupBox.TabStop = false;
             this.PriceGroupBox.Text = "Your Price";
             // 
-            // Back
+            // TotalTextBox
             // 
-            this.Back.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Back.Location = new System.Drawing.Point(627, 543);
-            this.Back.Name = "Back";
-            this.Back.Size = new System.Drawing.Size(116, 48);
-            this.Back.TabIndex = 3;
-            this.Back.Text = "Back";
-            this.Back.UseVisualStyleBackColor = true;
-            // 
-            // CancelButton
-            // 
-            this.CancelButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CancelButton.Location = new System.Drawing.Point(771, 543);
-            this.CancelButton.Name = "CancelButton";
-            this.CancelButton.Size = new System.Drawing.Size(116, 48);
-            this.CancelButton.TabIndex = 3;
-            this.CancelButton.Text = "Cancel";
-            this.CancelButton.UseVisualStyleBackColor = true;
-            this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
-            // 
-            // FinishButton
-            // 
-            this.FinishButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FinishButton.Location = new System.Drawing.Point(912, 543);
-            this.FinishButton.Name = "FinishButton";
-            this.FinishButton.Size = new System.Drawing.Size(116, 48);
-            this.FinishButton.TabIndex = 3;
-            this.FinishButton.Text = "Finish";
-            this.FinishButton.UseVisualStyleBackColor = true;
-            // 
-            // PriceTextBox
-            // 
-            this.PriceTextBox.BackColor = System.Drawing.Color.White;
-            this.PriceTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PriceTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PriceTextBox.Location = new System.Drawing.Point(181, 40);
-            this.PriceTextBox.Name = "PriceTextBox";
-            this.PriceTextBox.ReadOnly = true;
-            this.PriceTextBox.Size = new System.Drawing.Size(198, 28);
-            this.PriceTextBox.TabIndex = 25;
+            this.TotalTextBox.BackColor = System.Drawing.Color.White;
+            this.TotalTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TotalTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalTextBox.Location = new System.Drawing.Point(181, 196);
+            this.TotalTextBox.Name = "TotalTextBox";
+            this.TotalTextBox.ReadOnly = true;
+            this.TotalTextBox.Size = new System.Drawing.Size(198, 28);
+            this.TotalTextBox.TabIndex = 25;
             // 
             // TaxTextBox
             // 
@@ -385,26 +354,27 @@
             this.TaxTextBox.Size = new System.Drawing.Size(198, 28);
             this.TaxTextBox.TabIndex = 25;
             // 
-            // TotalTextBox
+            // PriceTextBox
             // 
-            this.TotalTextBox.BackColor = System.Drawing.Color.White;
-            this.TotalTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TotalTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TotalTextBox.Location = new System.Drawing.Point(181, 196);
-            this.TotalTextBox.Name = "TotalTextBox";
-            this.TotalTextBox.ReadOnly = true;
-            this.TotalTextBox.Size = new System.Drawing.Size(198, 28);
-            this.TotalTextBox.TabIndex = 25;
+            this.PriceTextBox.BackColor = System.Drawing.Color.White;
+            this.PriceTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PriceTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PriceTextBox.Location = new System.Drawing.Point(181, 40);
+            this.PriceTextBox.Name = "PriceTextBox";
+            this.PriceTextBox.ReadOnly = true;
+            this.PriceTextBox.Size = new System.Drawing.Size(198, 28);
+            this.PriceTextBox.TabIndex = 25;
             // 
-            // PriceLabel
+            // TotalLabel
             // 
-            this.PriceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PriceLabel.ForeColor = System.Drawing.Color.Black;
-            this.PriceLabel.Location = new System.Drawing.Point(99, 42);
-            this.PriceLabel.Name = "PriceLabel";
-            this.PriceLabel.Size = new System.Drawing.Size(57, 28);
-            this.PriceLabel.TabIndex = 10;
-            this.PriceLabel.Text = "Price";
+            this.TotalLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalLabel.ForeColor = System.Drawing.Color.Black;
+            this.TotalLabel.Location = new System.Drawing.Point(94, 198);
+            this.TotalLabel.Name = "TotalLabel";
+            this.TotalLabel.Size = new System.Drawing.Size(62, 28);
+            this.TotalLabel.TabIndex = 10;
+            this.TotalLabel.Text = "Total";
+            this.TotalLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // TaxLabel
             // 
@@ -417,16 +387,47 @@
             this.TaxLabel.Text = "Sales Tax (13%)";
             this.TaxLabel.Click += new System.EventHandler(this.label1_Click);
             // 
-            // TotalLabel
+            // PriceLabel
             // 
-            this.TotalLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TotalLabel.ForeColor = System.Drawing.Color.Black;
-            this.TotalLabel.Location = new System.Drawing.Point(99, 198);
-            this.TotalLabel.Name = "TotalLabel";
-            this.TotalLabel.Size = new System.Drawing.Size(54, 28);
-            this.TotalLabel.TabIndex = 10;
-            this.TotalLabel.Text = "Total";
-            this.TotalLabel.Click += new System.EventHandler(this.label1_Click);
+            this.PriceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PriceLabel.ForeColor = System.Drawing.Color.Black;
+            this.PriceLabel.Location = new System.Drawing.Point(99, 42);
+            this.PriceLabel.Name = "PriceLabel";
+            this.PriceLabel.Size = new System.Drawing.Size(57, 28);
+            this.PriceLabel.TabIndex = 10;
+            this.PriceLabel.Text = "Price";
+            // 
+            // Back
+            // 
+            this.Back.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Back.Location = new System.Drawing.Point(627, 543);
+            this.Back.Name = "Back";
+            this.Back.Size = new System.Drawing.Size(116, 48);
+            this.Back.TabIndex = 3;
+            this.Back.Text = "Back";
+            this.Back.UseVisualStyleBackColor = true;
+            this.Back.Click += new System.EventHandler(this.Back_Click);
+            // 
+            // CancelButton
+            // 
+            this.CancelButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CancelButton.Location = new System.Drawing.Point(771, 543);
+            this.CancelButton.Name = "CancelButton";
+            this.CancelButton.Size = new System.Drawing.Size(116, 48);
+            this.CancelButton.TabIndex = 2;
+            this.CancelButton.Text = "Cancel";
+            this.CancelButton.UseVisualStyleBackColor = true;
+            this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
+            // 
+            // FinishButton
+            // 
+            this.FinishButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FinishButton.Location = new System.Drawing.Point(912, 543);
+            this.FinishButton.Name = "FinishButton";
+            this.FinishButton.Size = new System.Drawing.Size(116, 48);
+            this.FinishButton.TabIndex = 1;
+            this.FinishButton.Text = "Finish";
+            this.FinishButton.UseVisualStyleBackColor = true;
             // 
             // OrderForm
             // 
@@ -439,9 +440,11 @@
             this.Controls.Add(this.Back);
             this.Controls.Add(this.PriceGroupBox);
             this.Controls.Add(this.SystemGroupBox);
+            this.MaximizeBox = false;
             this.Name = "OrderForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "OrderForm";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.OrderForm_FormClosing);
             this.SystemGroupBox.ResumeLayout(false);
             this.SystemGroupBox.PerformLayout();
             this.PriceGroupBox.ResumeLayout(false);

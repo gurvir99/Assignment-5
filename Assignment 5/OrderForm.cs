@@ -26,5 +26,16 @@ namespace Assignment_5
         {
 
         }
+
+        private void Back_Click(object sender, EventArgs e)
+        {
+            Program.productInfoForm.Show();
+            this.Hide();
+        }
+
+        private void OrderForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
