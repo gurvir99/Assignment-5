@@ -34,9 +34,10 @@ namespace Assignment_5
 
         private void NextButton_Click(object sender, EventArgs e)
         {
+            SetInfo();
             Program.productInfoForm.Show();
             this.Hide();
-            SetInfo();
+            
         }
 
         private void ComputerDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -52,7 +53,7 @@ namespace Assignment_5
             Application.Exit();
         }
 
-        public void SetInfo()
+        private void SetInfo()
         {
 
             var manufacturer = ComputerDataGridView.SelectedRows[0].Cells[2].Value;
