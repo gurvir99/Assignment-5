@@ -51,6 +51,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DollarComputersDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="InfoClass.cs" />
     <Compile Include="OrderForm.cs">
       <SubType>Form</SubType>
     </Compile>

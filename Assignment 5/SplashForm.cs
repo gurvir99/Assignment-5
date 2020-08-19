@@ -23,5 +23,6 @@ namespace Assignment_5
             this.Hide();
             SplashFormTimer.Enabled = false;
         }
+
     }
 }

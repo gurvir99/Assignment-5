@@ -35,11 +35,12 @@
             // 
             // SplashLabel
             // 
-            this.SplashLabel.Location = new System.Drawing.Point(67, 214);
+            this.SplashLabel.Location = new System.Drawing.Point(21, 209);
             this.SplashLabel.Name = "SplashLabel";
-            this.SplashLabel.Size = new System.Drawing.Size(363, 148);
+            this.SplashLabel.Size = new System.Drawing.Size(448, 102);
             this.SplashLabel.TabIndex = 0;
-            this.SplashLabel.Text = "Welcome to Dollar Computers!\r\n             We sell for less!";
+            this.SplashLabel.Text = "Welcome to Dollar Computers!\r\n    We sell for less!";
+            this.SplashLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // SplashFormTimer
             // 
@@ -51,11 +52,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(482, 503);
+            this.ClientSize = new System.Drawing.Size(500, 550);
             this.Controls.Add(this.SplashLabel);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "SplashForm";
