@@ -71,7 +71,9 @@ namespace Assignment_5
             var gpuType = ComputerDataGridView.SelectedRows[0].Cells[19].Value;
             var webcam = ComputerDataGridView.SelectedRows[0].Cells[30].Value;
             var lcd = ComputerDataGridView.SelectedRows[0].Cells[7].Value;
-            var memory = ComputerDataGridView.SelectedRows[0].Cells[4].Value;
+            var memory = ComputerDataGridView.SelectedRows[0].Cells[5].Value;
+          
+            
 
             Program.infoClass.productID = id.ToString();
             Program.infoClass.condition = condition.ToString();
@@ -89,6 +91,7 @@ namespace Assignment_5
             Program.infoClass.manufacturer = manufacturer.ToString();
             Program.infoClass.model = model.ToString();
             Program.infoClass.memory = memory.ToString();
+            
         }
     }
 }

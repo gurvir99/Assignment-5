@@ -57,6 +57,15 @@ namespace Assignment_5
             HDDTextBox.Text = Program.infoClass.hdd;
             GPUTextBox.Text = Program.infoClass.gpuType;
             WebcamTextBox.Text = Program.infoClass.webcam;
+
+            if (IdTextBox.Text == "")
+            {
+                NextButton.Enabled = false;
+            }
+            else
+            {
+                NextButton.Enabled = true;
+            }
         }
 
         private void AnotherButton_Click(object sender, EventArgs e)
@@ -139,6 +148,15 @@ namespace Assignment_5
             HDDTextBox.Text = Program.infoClass.hdd;
             GPUTextBox.Text = Program.infoClass.gpuType;
             WebcamTextBox.Text = Program.infoClass.webcam;
+
+            if (IdTextBox.Text == "")
+            {
+                NextButton.Enabled = false;
+            }
+            else
+            {
+                NextButton.Enabled = true;
+            }
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -180,6 +198,11 @@ namespace Assignment_5
                 streamWriter.Flush();
                 streamWriter.Close();
             }
+        }
+
+        private void selectAnotherProductToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AnotherButton_Click(sender, e as EventArgs);
         }
     }
 }

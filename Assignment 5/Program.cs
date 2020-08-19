@@ -14,6 +14,7 @@ namespace Assignment_5
         public static OrderForm orderForm;
         public static SplashForm splashForm;
         public static InfoClass infoClass;
+        public static AboutBoxForm aboutBoxForm;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -29,6 +30,7 @@ namespace Assignment_5
             orderForm = new OrderForm();
             splashForm = new SplashForm();
             infoClass = new InfoClass();
+            aboutBoxForm = new AboutBoxForm();
 
 
             Application.Run(splashForm);

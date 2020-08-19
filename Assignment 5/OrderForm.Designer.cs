@@ -59,8 +59,19 @@
             this.Back = new System.Windows.Forms.Button();
             this.CancelButton = new System.Windows.Forms.Button();
             this.FinishButton = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.backToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.SystemGroupBox.SuspendLayout();
             this.PriceGroupBox.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // SystemGroupBox
@@ -97,11 +108,11 @@
             // 
             this.ComponentsTextBox.BackColor = System.Drawing.Color.White;
             this.ComponentsTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ComponentsTextBox.Location = new System.Drawing.Point(136, 168);
+            this.ComponentsTextBox.Location = new System.Drawing.Point(136, 150);
             this.ComponentsTextBox.Multiline = true;
             this.ComponentsTextBox.Name = "ComponentsTextBox";
             this.ComponentsTextBox.ReadOnly = true;
-            this.ComponentsTextBox.Size = new System.Drawing.Size(419, 372);
+            this.ComponentsTextBox.Size = new System.Drawing.Size(419, 390);
             this.ComponentsTextBox.TabIndex = 25;
             // 
             // OSLabel
@@ -109,7 +120,7 @@
             this.OSLabel.AutoSize = true;
             this.OSLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.OSLabel.ForeColor = System.Drawing.Color.Black;
-            this.OSLabel.Location = new System.Drawing.Point(78, 520);
+            this.OSLabel.Location = new System.Drawing.Point(78, 502);
             this.OSLabel.Name = "OSLabel";
             this.OSLabel.Size = new System.Drawing.Size(33, 20);
             this.OSLabel.TabIndex = 24;
@@ -120,7 +131,7 @@
             this.WebcamLabel.AutoSize = true;
             this.WebcamLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.WebcamLabel.ForeColor = System.Drawing.Color.Black;
-            this.WebcamLabel.Location = new System.Drawing.Point(39, 483);
+            this.WebcamLabel.Location = new System.Drawing.Point(39, 465);
             this.WebcamLabel.Name = "WebcamLabel";
             this.WebcamLabel.Size = new System.Drawing.Size(75, 20);
             this.WebcamLabel.TabIndex = 21;
@@ -131,7 +142,7 @@
             this.GPULabel.AutoSize = true;
             this.GPULabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GPULabel.ForeColor = System.Drawing.Color.Black;
-            this.GPULabel.Location = new System.Drawing.Point(25, 446);
+            this.GPULabel.Location = new System.Drawing.Point(25, 428);
             this.GPULabel.Name = "GPULabel";
             this.GPULabel.Size = new System.Drawing.Size(86, 20);
             this.GPULabel.TabIndex = 22;
@@ -142,7 +153,7 @@
             this.HDDLabel.AutoSize = true;
             this.HDDLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HDDLabel.ForeColor = System.Drawing.Color.Black;
-            this.HDDLabel.Location = new System.Drawing.Point(63, 412);
+            this.HDDLabel.Location = new System.Drawing.Point(63, 384);
             this.HDDLabel.Name = "HDDLabel";
             this.HDDLabel.Size = new System.Drawing.Size(48, 20);
             this.HDDLabel.TabIndex = 23;
@@ -153,7 +164,7 @@
             this.LCDSizeLabel.AutoSize = true;
             this.LCDSizeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LCDSizeLabel.ForeColor = System.Drawing.Color.Black;
-            this.LCDSizeLabel.Location = new System.Drawing.Point(29, 175);
+            this.LCDSizeLabel.Location = new System.Drawing.Point(29, 152);
             this.LCDSizeLabel.Name = "LCDSizeLabel";
             this.LCDSizeLabel.Size = new System.Drawing.Size(82, 20);
             this.LCDSizeLabel.TabIndex = 18;
@@ -164,7 +175,7 @@
             this.CPUSpeedLabel.AutoSize = true;
             this.CPUSpeedLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CPUSpeedLabel.ForeColor = System.Drawing.Color.Black;
-            this.CPUSpeedLabel.Location = new System.Drawing.Point(15, 372);
+            this.CPUSpeedLabel.Location = new System.Drawing.Point(15, 345);
             this.CPUSpeedLabel.Name = "CPUSpeedLabel";
             this.CPUSpeedLabel.Size = new System.Drawing.Size(96, 20);
             this.CPUSpeedLabel.TabIndex = 19;
@@ -175,7 +186,7 @@
             this.CPUNumberLabel.AutoSize = true;
             this.CPUNumberLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CPUNumberLabel.ForeColor = System.Drawing.Color.Black;
-            this.CPUNumberLabel.Location = new System.Drawing.Point(6, 331);
+            this.CPUNumberLabel.Location = new System.Drawing.Point(6, 307);
             this.CPUNumberLabel.Name = "CPUNumberLabel";
             this.CPUNumberLabel.Size = new System.Drawing.Size(108, 20);
             this.CPUNumberLabel.TabIndex = 20;
@@ -186,7 +197,7 @@
             this.CPUTypeLabel.AutoSize = true;
             this.CPUTypeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CPUTypeLabel.ForeColor = System.Drawing.Color.Black;
-            this.CPUTypeLabel.Location = new System.Drawing.Point(26, 291);
+            this.CPUTypeLabel.Location = new System.Drawing.Point(26, 272);
             this.CPUTypeLabel.Name = "CPUTypeLabel";
             this.CPUTypeLabel.Size = new System.Drawing.Size(85, 20);
             this.CPUTypeLabel.TabIndex = 15;
@@ -197,7 +208,7 @@
             this.CPUBrandLabel.AutoSize = true;
             this.CPUBrandLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CPUBrandLabel.ForeColor = System.Drawing.Color.Black;
-            this.CPUBrandLabel.Location = new System.Drawing.Point(20, 252);
+            this.CPUBrandLabel.Location = new System.Drawing.Point(20, 231);
             this.CPUBrandLabel.Name = "CPUBrandLabel";
             this.CPUBrandLabel.Size = new System.Drawing.Size(94, 20);
             this.CPUBrandLabel.TabIndex = 16;
@@ -208,7 +219,7 @@
             this.MemoryLabel.AutoSize = true;
             this.MemoryLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MemoryLabel.ForeColor = System.Drawing.Color.Black;
-            this.MemoryLabel.Location = new System.Drawing.Point(39, 212);
+            this.MemoryLabel.Location = new System.Drawing.Point(39, 190);
             this.MemoryLabel.Name = "MemoryLabel";
             this.MemoryLabel.Size = new System.Drawing.Size(69, 20);
             this.MemoryLabel.TabIndex = 17;
@@ -374,7 +385,6 @@
             this.TotalLabel.Size = new System.Drawing.Size(62, 28);
             this.TotalLabel.TabIndex = 10;
             this.TotalLabel.Text = "Total";
-            this.TotalLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // TaxLabel
             // 
@@ -385,7 +395,6 @@
             this.TaxLabel.Size = new System.Drawing.Size(168, 42);
             this.TaxLabel.TabIndex = 10;
             this.TaxLabel.Text = "Sales Tax (13%)";
-            this.TaxLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // PriceLabel
             // 
@@ -429,6 +438,85 @@
             this.FinishButton.Text = "Finish";
             this.FinishButton.UseVisualStyleBackColor = true;
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem,
+            this.editToolStripMenuItem,
+            this.helpToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1062, 28);
+            this.menuStrip1.TabIndex = 4;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // fileToolStripMenuItem
+            // 
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.printToolStripMenuItem,
+            this.toolStripSeparator1,
+            this.exitToolStripMenuItem});
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
+            this.fileToolStripMenuItem.Text = "File";
+            // 
+            // printToolStripMenuItem
+            // 
+            this.printToolStripMenuItem.Name = "printToolStripMenuItem";
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.printToolStripMenuItem.Text = "&Print";
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.exitToolStripMenuItem.Text = "&Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
+            // editToolStripMenuItem
+            // 
+            this.editToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.backToolStripMenuItem});
+            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(49, 24);
+            this.editToolStripMenuItem.Text = "Edit";
+            // 
+            // backToolStripMenuItem
+            // 
+            this.backToolStripMenuItem.Name = "backToolStripMenuItem";
+            this.backToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.backToolStripMenuItem.Text = "&Back";
+            this.backToolStripMenuItem.Click += new System.EventHandler(this.backToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(221, 6);
+            // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripSeparator6,
+            this.aboutToolStripMenuItem});
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(55, 24);
+            this.helpToolStripMenuItem.Text = "&Help";
+            // 
+            // toolStripSeparator6
+            // 
+            this.toolStripSeparator6.Name = "toolStripSeparator6";
+            this.toolStripSeparator6.Size = new System.Drawing.Size(221, 6);
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.A)));
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(234, 26);
+            this.aboutToolStripMenuItem.Text = "&About...";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+            // 
             // OrderForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -440,16 +528,23 @@
             this.Controls.Add(this.Back);
             this.Controls.Add(this.PriceGroupBox);
             this.Controls.Add(this.SystemGroupBox);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.Name = "OrderForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "OrderForm";
+            this.Activated += new System.EventHandler(this.OrderForm_Activated);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.OrderForm_FormClosing);
+            this.Load += new System.EventHandler(this.OrderForm_Load);
             this.SystemGroupBox.ResumeLayout(false);
             this.SystemGroupBox.PerformLayout();
             this.PriceGroupBox.ResumeLayout(false);
             this.PriceGroupBox.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -486,5 +581,15 @@
         private System.Windows.Forms.Label TaxLabel;
         private System.Windows.Forms.Label PriceLabel;
         private System.Windows.Forms.Label TotalLabel;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem printToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem backToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
+        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
     }
 }

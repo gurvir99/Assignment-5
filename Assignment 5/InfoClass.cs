@@ -25,11 +25,12 @@ namespace Assignment_5
         public string hdd { get; set; }
         public string gpuType { get; set; }
         public string webcam { get; set; }
+        
 
         //constructor
         public InfoClass (string product_ID = "", string condition = "", string platform = "", string manufacturer = "", string os ="", string cost="",
             string model="", string memory="", string cpu_type="", string cpu_brand="", string lcd_size="", string cpu_number="", string cpu_speed="",
-            string hdd="", string gpu_type="", string webcam="")
+            string hdd="", string gpu_type="", string webcam="" )
         {
             this.productID = product_ID;
             this.condition = condition;
@@ -47,6 +48,7 @@ namespace Assignment_5
             this.hdd = hdd;
             this.gpuType = gpu_type;
             this.webcam = webcam;
+            
         }
 
     }
