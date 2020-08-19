@@ -17,10 +17,7 @@ namespace Assignment_5
             InitializeComponent();
         }
 
-        private void StartForm_Load(object sender, EventArgs e)
-        {
-
-        }
+      
 
         private void ExitButton_Click(object sender, EventArgs e)
         {

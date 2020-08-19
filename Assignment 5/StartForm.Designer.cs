@@ -48,7 +48,7 @@
             // NewOrderButton
             // 
             this.NewOrderButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NewOrderButton.Location = new System.Drawing.Point(112, 286);
+            this.NewOrderButton.Location = new System.Drawing.Point(112, 300);
             this.NewOrderButton.Name = "NewOrderButton";
             this.NewOrderButton.Size = new System.Drawing.Size(261, 56);
             this.NewOrderButton.TabIndex = 1;
@@ -59,7 +59,7 @@
             // LoadButton
             // 
             this.LoadButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LoadButton.Location = new System.Drawing.Point(112, 359);
+            this.LoadButton.Location = new System.Drawing.Point(112, 372);
             this.LoadButton.Name = "LoadButton";
             this.LoadButton.Size = new System.Drawing.Size(261, 55);
             this.LoadButton.TabIndex = 2;
@@ -70,9 +70,9 @@
             // ExitButton
             // 
             this.ExitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ExitButton.Location = new System.Drawing.Point(112, 431);
+            this.ExitButton.Location = new System.Drawing.Point(112, 445);
             this.ExitButton.Name = "ExitButton";
-            this.ExitButton.Size = new System.Drawing.Size(261, 48);
+            this.ExitButton.Size = new System.Drawing.Size(261, 46);
             this.ExitButton.TabIndex = 3;
             this.ExitButton.Text = "Exit";
             this.ExitButton.UseVisualStyleBackColor = true;
@@ -81,9 +81,11 @@
             // LogoPictureBox
             // 
             this.LogoPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.LogoPictureBox.Location = new System.Drawing.Point(79, 97);
+            this.LogoPictureBox.Image = global::Assignment_5.Properties.Resources.slider_lessstress_01;
+            this.LogoPictureBox.Location = new System.Drawing.Point(60, 59);
             this.LogoPictureBox.Name = "LogoPictureBox";
-            this.LogoPictureBox.Size = new System.Drawing.Size(315, 149);
+            this.LogoPictureBox.Size = new System.Drawing.Size(348, 221);
+            this.LogoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.LogoPictureBox.TabIndex = 4;
             this.LogoPictureBox.TabStop = false;
             // 
@@ -104,7 +106,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Welcome to Dollar Computer!";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.StartForm_FormClosing);
-            this.Load += new System.EventHandler(this.StartForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.LogoPictureBox)).EndInit();
             this.ResumeLayout(false);
 

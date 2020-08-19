@@ -116,6 +116,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="DollarComputersDataSet.xsc">
       <DependentUpon>DollarComputersDataSet.xsd</DependentUpon>
@@ -140,6 +141,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dollar_sign_computer_screen-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\what-1366x869.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\compterB.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\what-1366x8691.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\what-1366x8692.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slider-lessstress-01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dollar.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
