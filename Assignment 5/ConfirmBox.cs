@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace Assignment_5
 {
-    public partial class AboutBoxForm : Form
+    partial class ConfirmBox : Form
     {
-        public AboutBoxForm()
+        public ConfirmBox()
         {
             InitializeComponent();
             this.Text = String.Format("About {0}", AssemblyTitle);
@@ -102,8 +102,14 @@ namespace Assignment_5
         }
         #endregion
 
-        private void AboutBoxForm_FormClosing(object sender, FormClosingEventArgs e)
+        private void okButton_Click(object sender, EventArgs e)
         {
+            Application.Exit();
+        }
+
+        private void ConfirmBox_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

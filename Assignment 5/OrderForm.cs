@@ -105,5 +105,10 @@ namespace Assignment_5
         {
             Program.aboutBoxForm.ShowDialog();
         }
+
+        private void FinishButton_Click(object sender, EventArgs e)
+        {
+            Program.confirmBox.Show();
+        }
     }
 }
