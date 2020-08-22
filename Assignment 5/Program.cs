@@ -16,6 +16,7 @@ namespace Assignment_5
         public static InfoClass infoClass;
         public static AboutBoxForm aboutBoxForm;
         public static ConfirmBox confirmBox;
+        public static PrintBox printBox;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -33,6 +34,7 @@ namespace Assignment_5
             infoClass = new InfoClass();
             aboutBoxForm = new AboutBoxForm();
             confirmBox = new ConfirmBox();
+            printBox = new PrintBox();
 
 
             Application.Run(splashForm);

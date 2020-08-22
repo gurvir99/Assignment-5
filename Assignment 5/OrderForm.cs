@@ -110,5 +110,10 @@ namespace Assignment_5
         {
             Program.confirmBox.Show();
         }
+
+        private void printToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Program.printBox.ShowDialog();
+        }
     }
 }

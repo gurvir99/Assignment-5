@@ -70,6 +70,12 @@
     <Compile Include="OrderForm.Designer.cs">
       <DependentUpon>OrderForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="PrintBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintBox.Designer.cs">
+      <DependentUpon>PrintBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="ProductInfoForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +110,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="OrderForm.resx">
       <DependentUpon>OrderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintBox.resx">
+      <DependentUpon>PrintBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProductInfoForm.resx">
       <DependentUpon>ProductInfoForm.cs</DependentUpon>

@@ -204,5 +204,72 @@ namespace Assignment_5
         {
             AnotherButton_Click(sender, e as EventArgs);
         }
+
+        private void SetInfo(StreamReader streamReader)
+        {
+            Program.infoClass.productID = streamReader.ReadLine();
+            Program.infoClass.cost = streamReader.ReadLine();
+            Program.infoClass.condition = streamReader.ReadLine();
+            Program.infoClass.platform = streamReader.ReadLine();
+            Program.infoClass.model = streamReader.ReadLine();
+            Program.infoClass.os = streamReader.ReadLine();
+            Program.infoClass.manufacturer = streamReader.ReadLine();
+            Program.infoClass.memory = streamReader.ReadLine();
+            Program.infoClass.cpuBrand = streamReader.ReadLine();
+            Program.infoClass.cpuType = streamReader.ReadLine();
+            Program.infoClass.lcdSize = streamReader.ReadLine();
+            Program.infoClass.cpuSpeed = streamReader.ReadLine();
+            Program.infoClass.cpuNumber = streamReader.ReadLine();
+            Program.infoClass.hdd = streamReader.ReadLine();
+            Program.infoClass.gpuType = streamReader.ReadLine();
+            Program.infoClass.webcam = streamReader.ReadLine();
+
+
+        }
+
+        private void ShowInfo()
+        {
+            IdTextBox.Text = Program.infoClass.productID;
+            CostTextBox.Text = Program.infoClass.cost;
+            ConditionTextBox.Text = Program.infoClass.condition;
+            PlatformTextBox.Text = Program.infoClass.platform;
+            ModelTextBox.Text = Program.infoClass.model;
+            OSTextBox.Text = Program.infoClass.os;
+            ManufacturerTextBox.Text = Program.infoClass.manufacturer;
+            MemoryTextBox.Text = Program.infoClass.memory;
+            BrandTextBox.Text = Program.infoClass.cpuBrand;
+            CPUTypeTextBox.Text = Program.infoClass.cpuType;
+            LCDTextBox.Text = Program.infoClass.lcdSize;
+            SpeedTextBox.Text = Program.infoClass.cpuSpeed;
+            NumberTextBox.Text = Program.infoClass.cpuNumber;
+            HDDTextBox.Text = Program.infoClass.hdd;
+            GPUTextBox.Text = Program.infoClass.gpuType;
+            WebcamTextBox.Text = Program.infoClass.webcam;
+        }
+        private void openToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //configure the openFileDialog
+            InfoOpenFileDialog.InitialDirectory = Directory.GetCurrentDirectory();
+            InfoOpenFileDialog.FileName = "OrderInfo";
+            InfoOpenFileDialog.Title = "Open Info";
+
+            //open the dialog
+            DialogResult openFileDialogResult = InfoOpenFileDialog.ShowDialog();
+            if(openFileDialogResult != DialogResult.Cancel)
+            {
+                //create streamReader
+                StreamReader streamReader = new StreamReader(InfoOpenFileDialog.FileName);
+
+                //read
+                SetInfo(streamReader);
+
+                ShowInfo();
+                NextButton.Enabled = true;
+
+                //clean
+                streamReader.Close();
+            }
+            
+        }
     }
 }

@@ -6,9 +6,9 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Order Confirmation")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Dollar Computers - dollarcomputers@sat.net - 4165555555")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Dollar Computers Official")]
 [assembly: AssemblyProduct("")]
 [assembly: AssemblyCopyright("Order Confirmation Number #001")]
 [assembly: AssemblyTrademark("")]
